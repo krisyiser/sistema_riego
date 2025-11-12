@@ -1,15 +1,26 @@
 ﻿# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
 .venv/
+venv/
+ENV/
+.build/
 
-# SO / IDE
-.DS_Store
-.vscode/
-*.code-workspace
-
-# Logs
+# Logs / data
+logs/
 *.log
+*.csv
 
-# Entorno
-.env
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (por si después metes cliente web)
+node_modules/
+dist/

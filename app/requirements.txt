@@ -1,1 +1,3 @@
-﻿# Requisitos Python (placeholder): RPLCD, adafruit-blinka, adafruit-circuitpython-dht, etc.
+﻿PyYAML>=6.0
+adafruit-blinka>=8.48
+adafruit-circuitpython-dht>=4.0.4

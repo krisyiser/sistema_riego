@@ -1,1 +1,55 @@
-﻿# Configuración de pines y umbrales (placeholder). Se completará con valores reales.
+﻿pins:
+  bomba:   17
+  valvula1: 22
+  valvula2: 23
+
+  suelo_do: 27
+  tanque_do: 26
+  ldr_do:    24
+
+  # DHT11 en pin DATA:
+  dht11_data: 5
+
+  # Ventilador por PWM (MOSFET/ULN2003)
+  fan_pwm: 6
+
+  # Ultrasónico
+  ultra_trig: 12
+  ultra_echo: 16
+
+  # LCD 16x2 (HD44780, 4-bit)
+  lcd_rs: 25
+  lcd_e:  19
+  lcd_d4: 4
+  lcd_d5: 13
+  lcd_d6: 20
+  lcd_d7: 21
+
+  # LED UV simulado
+  uv_led: 18
+
+umbrales:
+  suelo_seco: 1   # 1 = seco si tu módulo DO sube en seco
+  luz_min:    1   # 1 = poca luz si tu comparador entrega alto
+  tanque_min: 1   # 1 = tanque sin agua
+
+  temp_max: 30
+  temp_min: 12
+  hr_min:   35
+  hr_max:   75
+
+riegos:
+  zona1:
+    duracion_s: 12
+    cooldown_s: 300
+  zona2:
+    programado: ["08:00", "13:00", "18:00"]
+    duracion_s: 10
+
+ultra:
+  min_cm:  5
+  max_cm: 200
+
+lcd:
+  filas: 2
+  cols: 16

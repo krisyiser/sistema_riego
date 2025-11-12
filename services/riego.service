@@ -1,1 +1,16 @@
-﻿# Unidad systemd que ejecuta app/riego_main.py en el arranque (placeholder)
+﻿[Unit]
+Description=Sistema de Riego (Raspberry Pi)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/sistema_riego
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pi/sistema_riego/.venv/bin/python app/riego_main.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

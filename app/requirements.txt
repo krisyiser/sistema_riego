@@ -1,0 +1,1 @@
+﻿# Requisitos Python (placeholder): RPLCD, adafruit-blinka, adafruit-circuitpython-dht, etc.

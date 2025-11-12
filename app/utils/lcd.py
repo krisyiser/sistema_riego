@@ -1,0 +1,2 @@
+﻿# Abstracción de LCD (placeholder)
+
